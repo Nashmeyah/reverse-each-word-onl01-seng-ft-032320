@@ -1,6 +1,7 @@
-def reverse_each_word(string)
-  word = ""
-  chars = string.each_char.to_a
-  chars.size.times{word << chars.pop}
-  word
+def reverse_each_word(sentence)
+  new_string = ""
+  sentence.each do |word|
+    new_string << word.reverse
+    puts new_string
+  end
 end
